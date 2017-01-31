@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Portfolio Snapshot</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body ng-app = "appPnL"  >
+<!--        <select class ="portfolioSelection" ng-model ="pnldataModel" ng-options = "x.user for x in pnldata">
+            <option ng-repeat="portfolio in pnldata.user" ng-value = "pnldata.user">{{pnldata.user}}</option>
+        </select>-->
+        <div ng-controller="PnLController">
+            <table class = "positionsTable">
+                <tr>
+                    <td>PnL</td>
+                    <td>{{(pnldataModel[0].incomingpnl*1) + (pnldataModel[0].tradingpnl*1)}}</td>
+                </tr>
+                <tr>
+                    <td>Incoming PnL</td>
+                    <td>{{pnldataModel[0].incomingpnl}}</td>
+                </tr>
+                <tr>
+                    <td>Trading PnL</td>
+                    <td>{{pnldataModel[0].tradingpnl}}</td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Net Dollars Exposure</td>
+                    <td>{{pnldataModel[0].grossexp}}</td>
+                </tr>
+                <tr>
+                    <td>Long Dollars Exposure</td>
+                    <td>{{pnldataModel[0].longpos}}</td>
+                </tr>
+                <tr>
+                    <td>Short Dollars Exposure</td>
+                    <td>{{pnldataModel[0].shortpos}}</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Beta</td>
+                    <td>{{pnldataModel[0].ptfbeta}}</td>
+                </tr>
+                  <tr>
+                    <td>1% Var</td>
+                    <td>{{pnldataModel[0].onedayonepctvar}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id = "chart" ng-controller="sectorsController"> 
+            <bar data = 'chartData'></bar>
+        </div>
+        
+        
+        
+    <!--Modules-->
+    <script src = "JS/appPnl.js"></script>
+    <!--Directives-->
+    <script src="JS/Directives/sectorsChart.js"></script>
+    <!--Controllers-->
+    <<script src="JS/Controllers/PnLController.js"></script>
+    <<script src="JS/Controllers/sectorsController.js"></script>
+    </body>   
+</html>

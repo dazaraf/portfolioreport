@@ -1,0 +1,13 @@
+[
+	{
+		"user" : "icg",
+		"allocation" : 3000000,
+		"incomingpnl" : -19037.58,
+		"tradingpnl" : -9695.37,
+		"grossexp" : 4897739.64,
+		"longpos" : 2363646.63,
+		"shortpos" : 2534093.01,
+		"ptfbeta" : -225546.760619516,
+		"onedayonepctvar" : 36479.9328
+	}
+]

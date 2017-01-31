@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 29, 2017, 5:06:10 PM
+    Author     : USER 1
+*/
+.positionsTable {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    margin: 45px;
+    width: 480px;
+    text-align: left;
+    background: rgb(21, 139, 242);
+    background: rgba(21, 139, 242,0.2);
+    float: left;
+/*    border: 2px dotted grey;*/
+}
+
+tr:hover{
+   background-color: rgb(157, 21, 242);
+   opacity: 0.7;
+}
+
+.portfolioSelection {
+    float: left;
+}
+
+.negative{
+    fill: darkred;
+}
+
+.positive{
+    fill: lightsteelblue;
+}
+
+#chart{
+    float: right;
+}
