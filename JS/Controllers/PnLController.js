@@ -9,23 +9,19 @@ app.controller('PnLController', function($scope, $http, $interval){
     
     $interval(function(){
         
-        $http.get('portfoliodata.json').then(function(response) {
+        var dataset = f;
+        $http.get(dataset + 'table.json').then(function(response) {
             data = response.data; 
             
+            //var strUser = e.options[e.selectedIndex].text;
             $scope.pnldataModel = data;
-            $scope.pnldataModelUpdated = $scope.pnldataModel[0]
-//            $scope.pnldataModelUpdated = $scope.pnldataModelUpdated.slice(5,18);
-//            
-//            var chartDate = {}
-//            for (var key in $scope.pnldataModelUpdated);
-//            {
-//                console.log("sector: " + key + " exposure: " + $scope.pnldataModelUpdated[key]);
-//                
-//            }
-//            console.log($scope.pnldataModelUpdated);
-        
+            $scope.pnldataModelUpdated = $scope.pnldataModel[0];
+            console.log($scope.pnldataModelUpdated);
+            
+            console.log(f);
+            
         },function(err){throw err});        
-    },5000);
+    },1000);
     
     
 });

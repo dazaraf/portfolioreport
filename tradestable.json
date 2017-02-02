@@ -1,0 +1,198 @@
+[
+	{
+		"id" : 86531,
+		"user" : "alphaness",
+		"Ticker" : "AAPL",
+		"OpenPrice" : 105.35,
+		"Quantity" : 60
+	},
+	{
+		"id" : 86532,
+		"user" : "alphaness",
+		"Ticker" : "AGN",
+		"OpenPrice" : 307.47,
+		"Quantity" : 96
+	},
+	{
+		"id" : 86533,
+		"user" : "alphaness",
+		"Ticker" : "AMG",
+		"OpenPrice" : 155.99,
+		"Quantity" : 152
+	},
+	{
+		"id" : 86534,
+		"user" : "alphaness",
+		"Ticker" : "BHI",
+		"OpenPrice" : 47.25,
+		"Quantity" : 504
+	},
+	{
+		"id" : 86535,
+		"user" : "alphaness",
+		"Ticker" : "BLK",
+		"OpenPrice" : 333.10,
+		"Quantity" : 18
+	},
+	{
+		"id" : 86536,
+		"user" : "alphaness",
+		"Ticker" : "BRK B",
+		"OpenPrice" : 130.75,
+		"Quantity" : 250
+	},
+	{
+		"id" : 86537,
+		"user" : "alphaness",
+		"Ticker" : "C",
+		"OpenPrice" : 51.13,
+		"Quantity" : 620
+	},
+	{
+		"id" : 86538,
+		"user" : "alphaness",
+		"Ticker" : "CMG",
+		"OpenPrice" : 448.81,
+		"Quantity" : 60
+	},
+	{
+		"id" : 86539,
+		"user" : "alphaness",
+		"Ticker" : "COST",
+		"OpenPrice" : 159.54,
+		"Quantity" : 160
+	},
+	{
+		"id" : 86540,
+		"user" : "alphaness",
+		"Ticker" : "CVS",
+		"OpenPrice" : 96.46,
+		"Quantity" : 330
+	},
+	{
+		"id" : 86541,
+		"user" : "alphaness",
+		"Ticker" : "EMR",
+		"OpenPrice" : 47.30,
+		"Quantity" : 136
+	},
+	{
+		"id" : 86542,
+		"user" : "alphaness",
+		"Ticker" : "FB",
+		"OpenPrice" : 102.22,
+		"Quantity" : 124
+	},
+	{
+		"id" : 86543,
+		"user" : "alphaness",
+		"Ticker" : "GMCR",
+		"OpenPrice" : 90.08,
+		"Quantity" : 370
+	},
+	{
+		"id" : 86544,
+		"user" : "alphaness",
+		"Ticker" : "GOOGL",
+		"OpenPrice" : 759.44,
+		"Quantity" : 16
+	},
+	{
+		"id" : 86545,
+		"user" : "alphaness",
+		"Ticker" : "GT",
+		"OpenPrice" : 32.01,
+		"Quantity" : 202
+	},
+	{
+		"id" : 86546,
+		"user" : "alphaness",
+		"Ticker" : "JWN",
+		"OpenPrice" : 50.13,
+		"Quantity" : 128
+	},
+	{
+		"id" : 86547,
+		"user" : "alphaness",
+		"Ticker" : "KMI",
+		"OpenPrice" : 15.27,
+		"Quantity" : 1188
+	},
+	{
+		"id" : 86548,
+		"user" : "alphaness",
+		"Ticker" : "RHI",
+		"OpenPrice" : 46.14,
+		"Quantity" : 520
+	},
+	{
+		"id" : 86549,
+		"user" : "alphaness",
+		"Ticker" : "ROK",
+		"OpenPrice" : 101.52,
+		"Quantity" : 66
+	},
+	{
+		"id" : 86550,
+		"user" : "alphaness",
+		"Ticker" : "SPY",
+		"OpenPrice" : 201.01,
+		"Quantity" : -2465
+	},
+	{
+		"id" : 86551,
+		"user" : "alphaness",
+		"Ticker" : "SWKS",
+		"OpenPrice" : 77.93,
+		"Quantity" : 336
+	},
+	{
+		"id" : 86552,
+		"user" : "alphaness",
+		"Ticker" : "TSN",
+		"OpenPrice" : 52.96,
+		"Quantity" : 124
+	},
+	{
+		"id" : 86553,
+		"user" : "alphaness",
+		"Ticker" : "TWX",
+		"OpenPrice" : 64.92,
+		"Quantity" : 408
+	},
+	{
+		"id" : 86554,
+		"user" : "alphaness",
+		"Ticker" : "UPS",
+		"OpenPrice" : 94.84,
+		"Quantity" : 64
+	},
+	{
+		"id" : 86555,
+		"user" : "alphaness",
+		"Ticker" : "URBN",
+		"OpenPrice" : 22.75,
+		"Quantity" : 294
+	},
+	{
+		"id" : 86556,
+		"user" : "alphaness",
+		"Ticker" : "WMT",
+		"OpenPrice" : 61.46,
+		"Quantity" : 108
+	},
+	{
+		"id" : 86557,
+		"user" : "alphaness",
+		"Ticker" : "YUM",
+		"OpenPrice" : 72.21,
+		"Quantity" : 423
+	},
+	{
+		"id" : 86558,
+		"user" : "alphaness",
+		"Ticker" : "YUM",
+		"OpenPrice" : 72.21,
+		"Quantity" : 27
+	}
+]

@@ -8,7 +8,7 @@ app.controller('sectorsController', function($scope, $http, $interval){
     
     $interval(function(){
         
-        $http.get('sectorsdata.json').then(function(response) {
+        $http.get(f + 'chart.json').then(function(response) {
             data = response.data; 
             
             $scope.sectors = data[0];
@@ -18,7 +18,7 @@ app.controller('sectorsController', function($scope, $http, $interval){
                 entry = {"sector": key, "exposure": $scope.sectors[key]};
                 sectArray.push(entry);
             }
-            console.log(sectArray);
+            
             $scope.chartData = sectArray;
         },function(err){throw err});        
     },1000);

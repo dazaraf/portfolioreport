@@ -11,62 +11,75 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
         <script src="https://d3js.org/d3.v4.js"></script>
+        
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body ng-app = "appPnL"  >
-<!--        <select class ="portfolioSelection" ng-model ="pnldataModel" ng-options = "x.user for x in pnldata">
-            <option ng-repeat="portfolio in pnldata.user" ng-value = "pnldata.user">{{pnldata.user}}</option>
-        </select>-->
-        <div ng-controller="PnLController">
-            <table class = "positionsTable">
-                <tr>
-                    <td>PnL</td>
-                    <td>{{(pnldataModel[0].incomingpnl*1) + (pnldataModel[0].tradingpnl*1)}}</td>
-                </tr>
-                <tr>
-                    <td>Incoming PnL</td>
-                    <td>{{pnldataModel[0].incomingpnl}}</td>
-                </tr>
-                <tr>
-                    <td>Trading PnL</td>
-                    <td>{{pnldataModel[0].tradingpnl}}</td>
-                </tr>
+        <div id ="MainDiv">
+            <div ng-controller="PnLController">
 
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>Net Dollars Exposure</td>
-                    <td>{{pnldataModel[0].grossexp}}</td>
-                </tr>
-                <tr>
-                    <td>Long Dollars Exposure</td>
-                    <td>{{pnldataModel[0].longpos}}</td>
-                </tr>
-                <tr>
-                    <td>Short Dollars Exposure</td>
-                    <td>{{pnldataModel[0].shortpos}}</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>Beta</td>
-                    <td>{{pnldataModel[0].ptfbeta}}</td>
-                </tr>
-                  <tr>
-                    <td>1% Var</td>
-                    <td>{{pnldataModel[0].onedayonepctvar}}</td>
-                </tr>
-            </table>
-        </div>
+                <table class = "positionsTable">
+                    <tr>
+                        <td>PnL</td>
+                        <td>{{ (pnldataModelUpdated.incomingpnl*1) + (pnldataModelSelect.tradingpnl*1)}}</td>
+                    </tr>
+                    <tr>
+                        <td>Incoming PnL</td>
+                        <td>{{pnldataModelUpdated.incomingpnl}}</td>
+                    </tr>
+                    <tr>
+                        <td>Trading PnL</td>
+                        <td>{{pnldataModelUpdated.tradingpnl}}</td>
+                    </tr>
 
-        <div id = "chart" ng-controller="sectorsController"> 
-            <bar data = 'chartData'></bar>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Net Dollars Exposure</td>
+                        <td>{{pnldataModelUpdated.grossexp}}</td>
+                    </tr>
+                    <tr>
+                        <td>Long Dollars Exposure</td>
+                        <td>{{pnldataModelUpdated.longpos}}</td>
+                    </tr>
+                    <tr>
+                        <td>Short Dollars Exposure</td>
+                        <td>{{pnldataModelUpdated.shortpos}}</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Beta</td>
+                        <td>{{pnldataModelUpdated.ptfbeta}}</td>
+                    </tr>
+                      <tr>
+                        <td>1% Var</td>
+                        <td>{{pnldataModelUpdated.onedayonepctvar}}</td>
+                    </tr>
+                </table>
+            </div>
+            
+                <div class ="checkboxform" >
+                    <input type = "checkbox" onclick = "display(this)" id = "icg"> icg </input>
+                    <br></br>   
+                    <input type = "checkbox" onclick = "display(this)" id = "pd"> pd </input>
+                    <script>
+                        var f;
+                        function display(me){
+                            f = me.checked ? me.id : null;
+                        }
+
+                    </script>
+                </div>
+            
+            <div id = "chart" ng-controller="sectorsController"> 
+                <bar data = 'chartData'></bar>
+            </div>
         </div>
-        
         
         
     <!--Modules-->

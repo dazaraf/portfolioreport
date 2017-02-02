@@ -7,10 +7,15 @@ and open the template in the editor.
     Created on : Jan 29, 2017, 5:06:10 PM
     Author     : USER 1
 */
+#MainDiv {
+    display: flex;
+}
+
 .positionsTable {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-    font-size: 12px;
-    margin: 45px;
+    font-size: 18px;
+    margin: 50px 120px;
+    height: 500px;
     width: 480px;
     text-align: left;
     background: rgb(21, 139, 242);
@@ -19,6 +24,23 @@ and open the template in the editor.
 /*    border: 2px dotted grey;*/
 }
 
+.checkboxform{
+    border: 1px black solid;
+    width: 200px;
+    margin-top: 50px;
+    height: 500px;
+    background: rgb(157, 21, 242);
+    color: white;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 25px;
+}
+
+#chart{
+    float: right;
+    height: 500px;
+    margin: 50px 120px;
+    width: 480px;
+}
 tr:hover{
    background-color: rgb(157, 21, 242);
    opacity: 0.7;
@@ -36,6 +58,10 @@ tr:hover{
     fill: lightsteelblue;
 }
 
-#chart{
-    float: right;
+
+
+.checkboxform{
+    border: 1px black solid;
+    width: 200px;
 }
+

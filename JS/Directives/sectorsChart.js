@@ -49,16 +49,18 @@ app.directive("bar", function(){
         .attr("class", function(d) {return d.exposure < 0 ? "negative" : "positive" });
 
         
+        var xAxis = d3.axisBottom(x);
+        var yAxis = d3.axisLeft(y);
         
         svg.append("g")
        .attr("transform", "translate(0," + height + ")")
-       .call(d3.axisBottom(x));
+       .call(xAxis);
 
       // add the y Axis
         svg.append("g")
-        .call(d3.axisLeft(y));
+        .call(yAxis);
         
-        console.log(data);
+        
         
         },true);
     }
